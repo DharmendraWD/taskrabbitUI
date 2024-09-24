@@ -1,0 +1,24 @@
+.HeroBanner{
+        background: linear-gradient(#FFF, 25%, #ECF7EF);
+            height: 188px;
+                    padding: 65px 0 100px 0;
+                    margin-top: 20px;
+}
+.HeroBanner1stChild{
+        color: #0A2B14;
+        font-size: 18px;
+        line-height: 140.5%;
+        font-weight: 700;
+}
+.HeroBanner2ndChild{
+     color: #0D7A5F;
+             font-size: 24px;
+font-weight: 700;
+}
+.heroBannerChild {
+        display: flex;
+    justify-content: center;
+    gap: 120px;
+
+
+}

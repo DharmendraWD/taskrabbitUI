@@ -1,0 +1,129 @@
+@media(min-width:999px){
+    .closeNav{
+    display: none;
+}
+.list {
+    display: flex !important;
+}
+}
+
+@media(max-width:1300px){
+    .HeroRounded_Links_Parent{
+        margin: 0;
+    }
+    .popularProjectImageTextParent {
+    padding: 6px 11px;
+}
+.clientsFeedpackParen{
+        margin: 25px;
+        padding: 0;
+}
+.heroBannerChild {
+    margin: 0;
+}
+.footerBanner{
+        padding: 11px 30px;
+}
+}
+
+@media(max-width:1000px){
+    .belloMenuSection {
+
+        overflow: scroll;
+    }
+    .svg{
+        display: none;
+    }
+    .heroBannerChild {
+    gap: 24px;
+}
+.pplrproj{
+        padding: 0 11px;
+}
+.projectsCard {
+    grid-template-columns: 1fr 1fr;
+}
+.clientFeedBAck {
+    flex: 0 0 calc(50% - 10px);
+}
+.footerbannerPara {
+    text-align: left;
+}
+.navMenues{
+        position: fixed;
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 9999999999999;
+    min-height: 100vh;
+padding: 27px 17px 0 17px;
+    justify-content: normal;
+    align-items: start;    
+    width: 270px;
+}
+.closeNav{
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-right: 30px;
+}
+.hambrger{
+    display: flex;
+}
+.searchContainer {
+        width: 70%;
+}
+}
+
+
+@media(max-width:902px){
+    .popupParent{
+        max-width:500px ;
+        width: full;
+    }
+    .popupImg{
+            width: 100%;
+    height: 100%;
+    }
+}
+
+@media(max-width:600px){
+    .HeroPageImageCardText{
+    height: 249px;
+    max-width: 368px;
+    }
+    .HeroBanner{
+        height: auto;
+    }
+    .heroBannerChild{
+                display: flex;
+        flex-wrap: wrap;
+        gap: 14px 100px;
+    }
+    .projectsCard{
+        grid-template-columns: 1fr;
+    }
+    .clientfeedbackcard{
+            display: flex;
+    overflow: scroll;
+    flex-wrap: nowrap;
+    }
+    .clientFeedBAck{
+        min-width: 100%;
+    }
+    .footerBannerPTextParent{
+        flex-direction: column;
+    }
+    .popularProjectImageTextParent{
+        display: flex;
+    }
+    .popularProjectImageTextParent img{
+      width: 110px;
+    }
+    .belloMenuSection{
+            gap: 28px;
+    }
+}

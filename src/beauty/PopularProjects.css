@@ -1,0 +1,29 @@
+.popularProjectImageTextParent{
+        /* flex-direction: column;
+        height: 100%;
+        background: #F5F7F6;
+        border-radius: 16px;
+        box-shadow: 0px 0px 4px 0px rgba(7, 7, 7, 0.10), 0px 0px 8px 0px rgba(4, 46, 41, 0.14);
+        overflow: hidden;
+        cursor: pointer;
+        padding-bottom: 14px; */
+        /* width: 240px; */
+        padding: 6px 52px;
+
+}
+.popularProjectsImgDiv{
+    -webkit-flex: 163px 0 0;
+        -ms-flex: 163px 0 0;
+        flex: 163px 0 0;
+        width: 100%;
+}
+.popularProjectsImg{
+
+}
+.projectsCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px 0;
+        overflow: hidden;
+
+}

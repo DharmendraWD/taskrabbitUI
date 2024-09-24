@@ -1,0 +1,51 @@
+.navBtn{
+  border: 1px solid #0D7A5F;
+    border-radius: 8px;
+    color: #0D7A5F;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    padding: 8px 28px;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    transition-duration: 0.16s;
+    transition-property: background, color, border-color, box-shadow, -webkit-box-shadow;
+    transition-timing-function: ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.links{
+      color: #000000;
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    -webkit-text-decoration: none;
+    text-decoration: none
+}
+.navParent{
+  -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-bottom: 1px solid #dce0e6;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+}
