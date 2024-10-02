@@ -1,0 +1,17 @@
+cardHeadingClr --- for green text color
+
+.clrBlackOnHover:hover{
+    color: rgb(17, 17, 17);
+}
+.whiteClrGreenBg{
+    background:rgb(13, 122, 95);
+    color: white;
+}
+
+.greenClrWhiteBg{
+    color: rgb(13, 122, 95);
+    background: white;
+}
+.darkGreenHover{
+background-color: #0e4a20
+}

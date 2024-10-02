@@ -36,7 +36,7 @@ setTimeout(() => {
           <input type="email" className="border rounded-md px-4 py-2" placeholder="Email address" />
           <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md" type="button">Send me a discount</button>
         </div>
-        <p className="text-sm text-gray-500 mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem distinctio unde suscipit id, doloribus perspiciatis fuga impedit facere fugit nesciunt deleniti omnis obcaecati dolor sunt excepturi quis porro nam dolores dolor sunt excepturi quis porro nam dolores.</p>   
+        <p className="text-sm text-[11px] text-gray-500 mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem distinctio unde suscipit id, doloribus perspiciatis fuga impedit facere fugit nesciunt deleniti omnis obcaecati dolor sunt excepturi quis porro nam dolores dolor sunt excepturi quis porro nam dolores.</p>   
 
       </div>
     </div>

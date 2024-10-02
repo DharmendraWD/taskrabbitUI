@@ -10,6 +10,7 @@ import FooterGetHelp from "./components/hero/FooterGetHelp"
 import Footer from "./components/Include/footer"
 import Services from "./components/servicesPage/Services"
 import { Route, Routes } from "react-router-dom"
+import SignInUp from "./components/signInup/SignInUp"
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
 <Routes>
    <Route path="/" element={
           <>
+
             <Popup />
             <Hero />
             <ImageCard />
@@ -38,8 +40,11 @@ function App() {
             <FooterGetHelp />
           </>
         } />
-  <Route path='/Services' element={<Services></Services>}></Route>
+  <Route path='/Services' element={<Services></Services>}></Route>        
+        <Route path='/join' element={<SignInUp/>}></Route>        
+        <Route path='/signup' element={<SignInUp/>}></Route>        
 </Routes>
+
             <Footer />
     </>
   )

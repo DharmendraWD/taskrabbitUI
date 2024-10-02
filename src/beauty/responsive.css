@@ -2,8 +2,14 @@
     .closeNav{
     display: none;
 }
+.popupParent{
+    width: 100%;
+} 
 .list {
     display: flex !important;
+}
+.paddingX100px{
+    padding: 0 100px;
 }
 }
 
@@ -75,6 +81,10 @@ padding: 27px 17px 0 17px;
 }
 .searchContainer {
         width: 70%;
+}
+.wrapperPPimgT{
+        display: flex;
+    width: 100%;
 }
 }
 

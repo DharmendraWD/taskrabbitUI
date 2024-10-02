@@ -17,7 +17,7 @@ const Nav = () => {
                 <div className='hambrger' onClick={handleSideBar}>
                     <i className="ri-menu-fill"></i>
                 </div>
-                <img src="https://www.taskrabbit.com/_next/static/media/taskrabbit-logo.c585babc.svg" alt="" className='w-[189px]' />
+                <NavLink to='/'>          <img src="https://www.taskrabbit.com/_next/static/media/taskrabbit-logo.c585babc.svg" alt="" className='w-[189px]' /></NavLink>
             </div>
 
             <div className={`list w-[50%] justify-around flex items-center navMenues`}    style={{ display: isNavOpen ? "flex" : "none" }}>
@@ -25,7 +25,7 @@ const Nav = () => {
                     <i className="ri-close-large-line"></i>
                 </div>
                 <NavLink to="/Services" className={"links"}>Service </NavLink>
-                <a href="" className='links'>Sign up / Log in</a>
+                <NavLink to="/join" className='links'>Sign up / Log in</NavLink>
                 <a href="" className='becomeMaster navBtn'>Become a Master</a>
             </div>
         </div>

@@ -1,14 +1,5 @@
 .popularProjectImageTextParent{
-        /* flex-direction: column;
-        height: 100%;
-        background: #F5F7F6;
-        border-radius: 16px;
-        box-shadow: 0px 0px 4px 0px rgba(7, 7, 7, 0.10), 0px 0px 8px 0px rgba(4, 46, 41, 0.14);
-        overflow: hidden;
-        cursor: pointer;
-        padding-bottom: 14px; */
-        /* width: 240px; */
-        padding: 6px 52px;
+        padding: 6px 26px;
 
 }
 .popularProjectsImgDiv{
@@ -26,4 +17,15 @@
         gap: 30px 0;
         overflow: hidden;
 
+}
+.wrapperPPimgT{
+    background: #F5F7F6;
+    border-radius: 16px;
+    box-shadow: 0px 0px 4px 0px rgba(7, 7, 7, 0.10), 0px 0px 8px 0px rgba(4, 46, 41, 0.14);
+    cursor: pointer;
+    object-fit: cover;
+    overflow: hidden;
+}
+.popularProjText{
+        padding: 14px 0;
 }
