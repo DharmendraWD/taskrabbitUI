@@ -249,6 +249,9 @@ color: #0A2B14;
 .darkGreenHover:hover{
 background-color: #0A2B14;
 }
+a{
+    cursor: pointer;
+}
 .whiteClrGreenBg{
     background:rgb(13, 122, 95);
     color: white;
