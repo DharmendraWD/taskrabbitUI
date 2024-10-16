@@ -11,6 +11,7 @@ import Footer from "./components/Include/footer"
 import Services from "./components/servicesPage/Services"
 import { Route, Routes } from "react-router-dom"
 import SignInUp from "./components/signInup/SignInUp"
+import BecomeATasker from "./components/becomeAtasker/BecomeATasker"
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         <Route path='/join' element={<SignInUp/>}></Route>        
         <Route path='/signup' element={<SignInUp/>}></Route>        
         <Route path='/signin' element={<SignInUp/>}></Route>        
+        <Route path='/become-a-tasker' element={<BecomeATasker/>}></Route>        
 </Routes>
 
             <Footer />

@@ -26,7 +26,7 @@ const Nav = () => {
                 </div>
                 <NavLink to="/Services" className={"links"}>Service </NavLink>
                 <NavLink to="/join" className='links'>Sign up / Log in</NavLink>
-                <a href="" className='becomeMaster navBtn'>Become a Master</a>
+                <NavLink to="/become-a-tasker" className='becomeMaster navBtn'>Become a Master</NavLink>
             </div>
         </div>
     );
