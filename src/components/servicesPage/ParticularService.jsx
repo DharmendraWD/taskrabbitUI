@@ -18,9 +18,6 @@ const breadcrumbs = [
   { label: 'Featured Tasks' },
 ];
 
-  const { data: ServicesImageDetails, status } = useSelector((state) => state.ServicesImage);
-
-console.log(ServicesImageDetails)
   return (
     <>
     <CardBanner></CardBanner>

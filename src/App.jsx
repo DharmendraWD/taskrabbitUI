@@ -67,7 +67,7 @@ function App() {
     <Route path="/:title" element={<ParticularService />} />
 
    <Route path="/Service/:title" element={<ServicePageLink />} />
-
+ <Route path="/dummy" element={<h1>dummy</h1>} />
 
         {/* SERVICE PAGE WHEN CLICK ON CARD IMAGE     */}
         {ServicerouteLinks.map((data, index)=>{

@@ -1,14 +1,14 @@
 import React from 'react'
 import Heading from '../utility/Heading'
 import '../../beauty/ServiceHero.css'
-import { NavLink } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
 import Button2 from '../utility/Button2'
 import { useLocation } from 'react-router-dom'
 
 function Hero() {
 const location = useLocation();
 
-    
+    console.log(location)
 
   return (
     <div className='relative'>
@@ -17,7 +17,7 @@ const location = useLocation();
         <div className="inMiddle">
 <Heading label={"Lorem, ipsum dolor."} ></Heading>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <NavLink to={"/book"} className='flex justify-center pt-[31px]'>
+        <NavLink to={`/Service/book/${location.pathname}`} className='flex justify-center pt-[31px]'>
         <Button2 label={"Book Now"} style={{
           borderRadius: '0.5rem',
           borderStyle: 'solid',
@@ -33,7 +33,9 @@ const location = useLocation();
         }}></Button2>
         </NavLink>
         </div>
+        <NavLink to="/dummy"> dummy</NavLink>
     </div>
+
   )
 }
 

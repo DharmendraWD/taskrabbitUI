@@ -60,7 +60,7 @@ function CardsDetails() {
                 {[...Array(10)].map((_, index2) => (
                   <div style={{ padding: "0 15px" }} key={index2}>
                     {/* <NavLink to={`/${data.title.replace(/\s+/g, '-')}`}> */}
-                    <NavLink to={`/Service/${data.title.replace(/\s+/g, '-')}`}>
+                    <NavLink to={`/Service/${data.title.replace(/\s+/g, '-')}-id=${index2}`}>
                     <p className='text-start cardHeadingClr clrBlackOnHover'>Lorem ipsum, dolor {index2}.</p>
                     </NavLink>
                   </div>

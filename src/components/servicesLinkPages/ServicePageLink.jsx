@@ -5,8 +5,28 @@ import BreadCrumbs from '../Include/BreadCrumbs';
 import Heading from '../utility/Heading';
 import HowItWorks from './HowItWorks';
 
+
+import { fetchServicesImage } from '../../redux/slices/ServicesImage';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+
+
+
 function ServicePageLink() {
+    const dispatch = useDispatch();
 const location = useLocation();
+const id = useParams();
+
+console.log(id, "sue")
+
+
+  useEffect(() => {
+    dispatch(fetchServicesImage(location.pathname.slice(1)));
+  }, [location, dispatch])
+
+const { data: ServicesImageDetails, status } = useSelector((state) => state.ServicesImage);
+console.log(ServicesImageDetails)
+
 
 // FOR BREADCRUMBS LINKS 
 const breadcrumbs = [
@@ -14,6 +34,9 @@ const breadcrumbs = [
   { label: 'Services', link: '/services' },
   { label: location.pathname },
 ];
+
+
+
 
   return (
     <div>
