@@ -7,43 +7,60 @@ import midLeft_Svg from '../../img/mid_left_shape.9b13a86d.svg'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
+import { useDispatch, useSelector } from 'react-redux'
+import { STATUSES, fetchPopularProject } from '../../redux/slices/PopularProject'
+
+
+
 
 
 function PopularProjects() {
   // STATES ------------
-  const [isMobileView, setisMobileView] = useState(false)
-  const [loadMore, setloadMore] = useState("Load More...")
-  const [boxVal, setboxVal] = useState(4)
+  const dispatch = useDispatch();
+  const { data: PopularProject, status } = useSelector((state) => state.PopularProject);
+  
+  const [isMobileView, setIsMobileView] = useState(false);
+  const [loadMore, setloadMore] = useState("Load More...");
+  const [apiCallLength, setApiCallLength] = useState(8); // Set a default value
 
-
-  // FUNCTIONS----------------
-  const setMobileView = () => {    //if width is 600px then show load more option
-    if (window.innerWidth <= 600) {
-      setisMobileView(true)
-      console.log("less")
+  // Function to determine mobile view and set apiCallLength
+  const setMobileView = () => {
+    if (window.innerWidth <= 600 ) {
+      setIsMobileView(true);
+      if(loadMore ==="Load More..."){
+        setApiCallLength(4);
+      }
     } else {
-      setboxVal(8)
+      setIsMobileView(false);
+      setApiCallLength(8);
     }
-  }
+  };
+
+  useEffect(() => {
+    setMobileView();
+
+    dispatch(fetchPopularProject(apiCallLength));
+  }, [dispatch, apiCallLength]); 
+
+
+
+
+
 
 
   const handleLoadmore = () => {    ///Load more and load Leass
     if (loadMore === "Load More...") {
+      setApiCallLength(8)
       setloadMore("Show Less")
-      setboxVal(8)
-      console.log(boxVal)
+
     }
     else {
+      setApiCallLength(4)
       setloadMore("Load More...")
-      setboxVal(4)
     }
   }
   // FUNCTIONS END HERE----------------
 
-
-  useEffect(() => {       //Runs at first to check if the site is opened in small screen or lagre.
-    setMobileView()
-  }, [])
 
 
 
@@ -58,11 +75,11 @@ function PopularProjects() {
 
 
         <div className="projectsCard ">
-          {[...Array(boxVal)].map((_, index) => (
+          {PopularProject.map((projectdata, index) => (
             <div className={`popularProjectImageTextParent`} key={index}>
             <div className="wrapperPPimgT">
               <div className="popularProjectsImgDiv">
-                <img src="https://images.ctfassets.net/vwt5n1ljn95x/15JB3WRwRtvEsf5rcVKmnK/610c440541b1cca93bee3534037379e7/Furniture_Assembly.jpeg?w=750&q=75&fm=webp" alt="" className='popularProjectsImg' />
+                <img src={projectdata.image} alt="" className='popularProjectsImg height250' />
               </div>
 
               <div className="popularProjText">

@@ -21,7 +21,7 @@ setTimeout(() => {
   return (
      <div className={`text-center popupParent mx-auto max-w-[750px] h-full flex justify-center items-center z-50 ${showPopup ? 'visible' : 'invisible'} ${showPopupbyDef ? 'displayNone' : ""}`}>
       <div className="bg-white rounded-lg shadow-md p-6 w-full relative">
-        <button className="absolute top-0 right-0 p-2 text-gray-500 hover:text-gray-700" onClick={handleClose}>
+        <button className="absolute top-0 right-0 p-2 text-gray-500 hover:text-gray-700 text-[30px]" onClick={handleClose}>
           &times;
         </button>
         <div className='relative'>
@@ -34,7 +34,7 @@ setTimeout(() => {
         <p className="text-gray-700 mb-6">Lorem ipsum, dolor sit amet consecteligendi consequuntur mollitia ab tenetur quis? Debitis, impedit ipsam. Ipsum, illum excepturi.</p>
         <div className="flex flex-col space-y-4">
           <input type="email" className="border rounded-md px-4 py-2" placeholder="Email address" />
-          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md" type="button">Send me a discount</button>
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md " type="button">Send me a discount</button>
         </div>
         <p className="text-sm text-[11px] text-gray-500 mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem distinctio unde suscipit id, doloribus perspiciatis fuga impedit facere fugit nesciunt deleniti omnis obcaecati dolor sunt excepturi quis porro nam dolores dolor sunt excepturi quis porro nam dolores.</p>   
 

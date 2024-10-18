@@ -12,10 +12,11 @@ body{
     background: rgb(255, 252, 227);
 }
 .popupParent {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 80%;
 }
 .whiteHeading{
         font-size: 2rem;
@@ -45,6 +46,25 @@ body{
         font-size: 55px;
 }
 
+h1 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.breadcrumbs {
+display: flex;
+align-items: center;
+font-size: 18px;
+font-weight: 600;
+color: #0D7A5F;
+}
+.green{
+    color: #0d7a5f;
+}
+.separator {
+margin: 0 5px;
+}
 .heroSearchBtn{
        max-height: 64px;
         min-width: 88px;
@@ -108,15 +128,24 @@ background: #0D7A5F !important;
 .HeroRounded_Links_Parent {
 
 }
-
+.height250{
+    height: 200px;
+    margin: 0 auto;
+}
 /* --------------- */
 .imageCardImg{
             height: 574px;
         margin-left: auto;
         margin-right: auto;
-        max-width: 1110px;
-        padding: 40px 40px 0 40px;
+overflow: hidden;
+        padding: 40px 100px 0 100px;
             background-color: rgba(186, 231, 255, 0.5);
+}
+.widthWebkitFull{
+    width: -webkit-fill-available;
+}
+.HeroImageCardParent {
+       padding: 0 100px 0 100px;
 }
 .HeroPageImageCardText{
         background-color: #FFF;

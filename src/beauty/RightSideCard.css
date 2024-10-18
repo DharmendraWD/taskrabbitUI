@@ -1,0 +1,29 @@
+.RightSideCardParent{
+        display: flex;
+    padding: 12px 30px;
+    gap: 6px;
+            content-visibility: auto;
+        contain-intrinsic-size: 230px;
+        padding:2rem 1rem;
+            background: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(177, 185, 195);
+    border-image: initial;
+    border-radius: 4px;
+    margin-top: 13px;
+}
+.RightSideCardParent_Img img{
+        border-radius: 100%;
+            max-width: 70%;
+}
+.wrapper{
+        display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.RightSideCardParent_Text{
+        display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

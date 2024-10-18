@@ -1,0 +1,33 @@
+.textTestimonial::before{
+    content: attr(data-index);
+    position: absolute;
+    left: -3%;
+    transform: translateX(-50%);
+    background-color: rgb(61, 70, 61);
+    color: white;
+    display: block;
+    text-align: center;
+    line-height: 21px;
+    width: 25px;
+    top: -3px;
+    font-weight: 600;
+    padding-top: 3px;
+    border-radius: 100%;
+        margin: 0 0 0 -12px;
+}
+.peopleSays::before{
+    content: "\201C";
+color: #bababa !important;
+font-size:1.3rem !important; 
+}
+.peopleSays::after{
+    content: "\201C";
+ color: #bababa !important;
+ font-size:1.3rem !important;
+}
+.testimonialName{
+    color: #3d463d !important;
+}
+.testimonialcontent{
+    color: #022022 !important;
+}

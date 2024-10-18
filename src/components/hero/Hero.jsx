@@ -12,33 +12,36 @@ import topLeft_Shape from '../../img/top_left_shape.a6553437.svg'
 import topRight_Shape from '../../img/top_right_shape.46afcf8f.svg'
 import RoundedLinks from './RoundedLinks';
 
-
+import { useDispatch, useSelector } from 'react-redux'
+import { STATUSES, fetchHeroRowsOption } from '../../redux/slices/HeroRowMenu'
 
 
 
 
 
 function Hero() {
+  // geting data with rtk by fetching API
+   const dispatch =useDispatch();
+  
+  useEffect(()=>{
+     dispatch(fetchHeroRowsOption(1));  
+  },[])
+  
+
+  
 
   const [activeIndex, setActiveIndex] = useState(null);
   const [boxMenuColor, setboxMenuColor] = useState("#a6a8ac");
 
   const handleClick = (index) => {
     setActiveIndex(index);
-
+ dispatch(fetchHeroRowsOption(index+1));  
 // generates random bg color for menu div box 
   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
        setboxMenuColor( `#${randomColor.padStart(6, '0')}`)
   };
 
 
-useEffect(() => {
-
-
-  return () => {
-
-  }
-}, [])
 
 
 
