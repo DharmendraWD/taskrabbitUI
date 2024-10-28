@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function BreadCrumbs({ breadcrumbs }) {
   return (
-    <div className="breadcrumbs">
+    <div className="breadcrumbs my-[12px]">
       {breadcrumbs.map((breadcrumb, index) => (
         <span key={index}>
           {index > 0 && <span className="separator">&gt;</span>}

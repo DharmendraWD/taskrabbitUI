@@ -20,7 +20,8 @@ function CardBanner() {
 
   return (
     <div className='UpperBanner_Service h-[60vh] overflow-hidden relative mb-[70px]'>
-<img src={ServicesImageDetails.image} alt="" className='h-[100%}'/>
+{/* <img src={ServicesImageDetails.image} alt="" className='h-[100%}'/> */}
+      <img src={`https://res.cloudinary.com/taskrabbit-com/image/upload/w_628,f_auto,q_auto/ktrlwhqexdewedkn9bgi`} alt="" className='min-h-[100%] min-w-[100%]'/>
 
 <Heading label={ServicesImageDetails.title} style={{fontSize:"50px",position:"absolute", top:"50%", lineHeight:"1", left:"50%", transform:"translate(-50%, -50%)", width:"100%", textAlign:"center"}}></Heading> 
 

@@ -58,7 +58,6 @@ function RightSideCard() {
                     }}></Button2>
             </NavLink>
         </div>
-
         </div>
     </div>
 

@@ -269,6 +269,24 @@ color: #0A2B14;
     min-width: 336px;
     gap: 30px;
 }
+.thinBorder{
+        -webkit-box-align: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-top: 1px solid rgb(191, 194, 193);
+    border-bottom: 1px solid rgb(191, 194, 193);
+    border-image: initial;
+    color: rgb(26, 30, 29);
+    display: inline-flex;
+    padding: 16px;
+    width: 100%;
+    border-left: none;
+    border-radius: 0px;
+    border-right: none;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: -32px 0px 32px;
+}
 .inputBoxCss{
     padding: 7px 7px 7px 20px;
     margin: 11px 0;

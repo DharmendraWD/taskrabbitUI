@@ -23,6 +23,7 @@ import { fetchPopularProject } from "./redux/slices/PopularProject"
 import dispatch from "./redux/store"
 import { useDispatch } from "react-redux"
 import { useSelector } from "react-redux"
+import DescribingTask from "./components/describing-task-comp/DescribingTask"
 
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
         <Route path='/signin' element={<SignInUp/>}></Route>        
         <Route path='/become-a-tasker' element={<BecomeATasker/>}></Route>     
         <Route path='/particularServices' element={<ParticularService/>}></Route>     
+        <Route path='/DescribingTask/:id' element={<DescribingTask />}></Route>     
 
 
 
